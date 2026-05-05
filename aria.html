@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 05 - Accessibility and ARIA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My Accessibility and Aria Task">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Accessibility and Aria</h1>
+            </header>
+            <nav aria-label="Main Menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <section>
+                <h2>Welcome</h2>
+                <p>This is my Day 5 task about Accessibility and Aria</p>
+                
+                <button aria-label="open menu">☰</button>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter Name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email">
+
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        <br>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+                <button>New page</button>
+            </section>
+            <section>
+                <h2>My Profile Card</h2>
+                <img src="image.jpg" alt="Photo of Durga">
+                <p>I am currently doing my Day 5 practice Page</p>
+                <button aria-label="Open menu">☰</button>
+            </section>
+            <footer>
+                <p>© Copyrights 2026</p>
+            </footer>
+        </main>
+    </body>
+</html>
